@@ -14,12 +14,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-The project have one copiled version at the directory `/dist`
+The project have one compiled version at the directory `/dist`
 
-To start this proyect, please regenerate the `node_modules`. You would enter to the directory `weather` once you download this proyect.
+To start this project, please regenerate the `node_modules`. You would enter to the directory `weather` once you download this project.
 
 ## Node
-Is mandatory have Node.Js in your local enviroment. So if you haven't please download and execute the comand `npm install`. Before you should execute `ng serve` to upload the server.
+Is mandatory have Node.Js in your local environment. So if you haven't please download and execute the command `npm install`. Before you should execute `ng serve` to upload the server.
 
 ## SPA
-This is a SPA build wit Angular. Is fully responsive and respect all users and devices for a friendly user expirience. Do not used modals windows for keep the user experience in all devices.
+This is a SPA build wit Angular. Is fully responsive and respect all users and devices for a friendly user experience. Do not used modals windows for keep the user experience in all devices.
