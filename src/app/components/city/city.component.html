@@ -1,0 +1,18 @@
+<div class="container" *ngIf="city">
+  <div class="row" >
+      <h1><span class="badge badge-secondary">{{city.city.name}}</span></h1>
+  </div>
+  <div class="row" >
+    <div class="card col-sm-3" *ngFor="let list of city.list">
+      <div class="card-body">
+        <h5 class="card-title">{{list.dt_txt}}</h5>
+        <div class="" *ngFor="let info of list.weather">
+            <span class="badge badge-primary">{{info.description | uppercase}}</span>
+          </div>
+        <p class="card-text">Wind speed: {{list.wind.speed}} m/s</p>
+        <span class="badge badge-danger">{{list.main.temp}}K</span>
+      </div>
+    </div>
+
+  </div>
+</div>

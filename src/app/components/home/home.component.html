@@ -1,0 +1,37 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="container">
+      <h1 class="display-4">This is your city</h1>
+      <p class="lead">
+        Weather City is a tool for your local weather information. Please check the sky conditions
+        or prepare your umbrella.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container" >
+  <div class="card" *ngFor="let city of cities" style="margin-top:10px;"> 
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-4">
+            <h5 class="card-title">{{city.name}}, {{city.sys.country}}</h5>
+            <div *ngFor="let weather of city.weather">
+              <span class="badge badge-info">{{weather.description | uppercase}}</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p class="card-text">Current Temp: {{city.main.temp}}°C</p>
+            <span class="badge badge-warning">Min: {{city.main.temp_min}}°</span> | <span class="badge badge-success">Max: {{city.main.temp_max}}°</span>
+        </div>
+        <div class="col-md-4">
+            <p>Wind speed: {{city.wind.speed}} m/s</p>
+            <div class="" [routerLink]="['/city', city.name, city.sys.country, 'home']">
+              <button type="button" class="btn btn-info">More info</button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
